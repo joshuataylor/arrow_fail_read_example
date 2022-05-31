@@ -1,0 +1,12 @@
+[package]
+name = "snowflake_arrow"
+version = "0.1.0"
+edition = "2021"
+authors = ["Josh Taylor <joshuataylorx@gmail.com>"]
+
+[dependencies]
+#rustler = "0.25.0"
+# Using git version, same issue on latest tag though
+arrow2 = { git = "https://github.com/jorgecarleitao/arrow2", features = ["io_ipc", "io_print"] }
+arrow = "15.0.0"
+#arrow2 = {ver}"0.11.2"
